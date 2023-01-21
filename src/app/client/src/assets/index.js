@@ -1,3 +1,3 @@
-import logo from "./logo.svg";
+import logo from "./musicoach-logo.png";
 
-export const logoSVG = logo;
+export const logoPNG = logo;

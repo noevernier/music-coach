@@ -48,34 +48,6 @@ export const SLogo = styled.div`
     margin-bottom: ${v.lgSpacing};
 `;
 
-export const SSearch = styled.div`
-    background: ${({ theme }) => theme.bgAlpha};
-    border: 1px solid ${({ theme }) => theme.bg3};
-    border-radius: ${v.borderRadius};
-    input {
-        padding: 0 ${v.smSpacing};
-        font-family: inherit;
-        letter-spacing: inherit;
-        font-size: 16px;
-        width: 100%;
-        outline: none;
-        border: none;
-        color: inherit;
-        background: transparent;
-    }
-    display: flex;
-`;
-
-export const SSearchIcon = styled.button`
-    ${btnReset};
-    padding: calc(${v.mdSpacing} - 2px) ${v.mdSpacing};
-    display: flex;
-    cursor: pointer;
-
-    svg {
-        font-size: 20px;
-    }
-`;
 
 export const SDivider = styled.div`
     height: 1px;
@@ -112,21 +84,19 @@ export const SLinkIcon = styled.div`
     }
 `;
 
+export const STextLogo = styled.span`
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 900;
+    align-self: center;
+`;
+
 export const SLinkLabel = styled.span`
     display: block;
     flex: 1;
     margin-left: ${v.smSpacing};
 `;
 
-export const SLinkNotification = styled.div`
-    font-size: 14px;
-    padding: calc(${v.smSpacing} / 2) ${v.smSpacing};
-    border-radius: calc(${v.borderRadius} / 2);
-    background: ${({ theme }) => theme.primary};
-    color: white;
-
-    margin-right: ${v.mdSpacing};
-`;
 
 export const STheme = styled.div`
     display: flex;
