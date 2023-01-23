@@ -86,8 +86,8 @@ export const SLinkIcon = styled.div`
 
 export const STextLogo = styled.span`
     margin-left: 20px;
-    font-size: 30px;
-    font-weight: 900;
+    font-size: 25px;
+    font-weight: 700;
     align-self: center;
 `;
 

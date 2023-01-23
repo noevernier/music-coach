@@ -42,12 +42,16 @@ const Sidebar = () => {
                     <AiOutlineLeft />
                 </SSidebarButton>
             </>
+
+
             <SLogo>
                 <img class="logo" src={logoPNG} alt="logo" />
                 {sidebarOpen && <STextLogo>{"MusiCoach"}</STextLogo>}
             </SLogo>
 
             <SDivider />
+
+
             {linksArray.map(({ icon, label, to }) => (
                 <SLinkContainer key={label} isActive={pathname === to}>
                     <SLink to={to} style={!sidebarOpen ? { width: `fit-content` } : {}}>
@@ -61,7 +65,10 @@ const Sidebar = () => {
                 </SLinkContainer>
             ))}
 
+
             <SDivider />
+
+
             {secondaryLinksArray.map(({ icon, label }) => (
                 <SLinkContainer key={label}>
                     <SLink to="/" style={!sidebarOpen ? { width: `fit-content` } : {}}>
@@ -72,6 +79,8 @@ const Sidebar = () => {
             ))}
 
             <SDivider />
+
+
             <STheme>
                 {sidebarOpen && <SThemeLabel>Dark Mode</SThemeLabel>}
                 <SThemeToggler
@@ -81,6 +90,8 @@ const Sidebar = () => {
                     <SToggleThumb style={theme === "dark" ? { right: "1px" } : {}} />
                 </SThemeToggler>
             </STheme>
+
+            
         </SSidebar>
     );
 };
