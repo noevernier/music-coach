@@ -1,15 +1,17 @@
 import React from "react";
 import Sidebar from "../Sidebar/Sidebar";
 import MenuBar from "../MenuBar/MenuBar";
-import { SLayout, SMain } from "./styles";
+import { SLayoutMenuBar, SLayoutSideBar, SMain } from "./styles";
 
 const Layout = ({ children }) => {
     return (
-        <SLayout>
+        <SLayoutSideBar>
             <Sidebar />
-            <MenuBar />
-            <SMain>{children}</SMain>
-        </SLayout>
+            <SLayoutMenuBar>
+                <MenuBar />
+                <SMain>{children}</SMain>
+            </SLayoutMenuBar>
+        </SLayoutSideBar>
     );
 };
 

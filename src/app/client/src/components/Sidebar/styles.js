@@ -16,7 +16,7 @@ export const SSidebarButton = styled.button`
     ${btnReset};
     position: absolute;
     top: ${v.xxlSpacing};
-    right: ${({ isOpen }) => (isOpen ? `-16px` : `-40px`)};
+    right: ${({ isOpen }) => (isOpen ? `-16px` : `-15px`)};
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -86,7 +86,6 @@ export const SLinkIcon = styled.div`
 
 export const STextLogo = styled.span`
     margin-left: 20px;
-    font-size: 25px;
     font-weight: 700;
     align-self: center;
 `;

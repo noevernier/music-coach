@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { v } from "../../styles/variables";
 
-export const SLayout = styled.div`
+export const SLayoutSideBar = styled.div`
     display: flex;
 `;
 
@@ -13,3 +13,8 @@ export const SMain = styled.main`
         font-size: 14px;
     }
 `;
+
+export const SLayoutMenuBar = styled.div`
+    display: flex;
+    width: 100%;
+    flex-direction: column;`;
